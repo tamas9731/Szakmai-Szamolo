@@ -10,15 +10,14 @@ Bx = float(input("B pont X koordinata : "))
 tAP = float( input("AP tavolsag : "))
 tBP = float( input("BP tavolsag : "))
 
-ky = Allaspont_YA = Ay 
-kx = Allaspont_XA = Ax
-vy = Allaspont_YB = By
-vx = Allaspont_XB = Bx
+ky = Ay 
+kx = Ax
+vy = By
+vx = Bx
 
 #Irányszög A-B
 
-ABszogu=math.degrees(math.atan((Allaspont_YB-Allaspont_YA)/(Allaspont_XB-Allaspont_XA)))
-    
+ABszogu=math.degrees(math.atan((vy-ky)/(vx-kx)))    
 if ((vy-ky)>0) and ((vx-kx)>0):
     ABszogo=ABszogu
 elif ((vy-ky)>0) and ((vx-kx)<0):
@@ -35,7 +34,7 @@ ABszogs=int(round((((ABszogo-ABszogd)*60)-ABszogm)*60))
 wszog = math.degrees(ABszogd + (ABszogm/60) + (ABszogs/3600))
 ABszog = wszog/360*2*math.pi
 
-tAB = round(math.sqrt(((Allaspont_YB-Allaspont_YA)**2)+((Allaspont_XB-Allaspont_XA)**2)),2)
+tAB = round(math.sqrt(((vy-ky)**2)+((vx-kx)**2)),2)
 
 if (ABszog > 180):
     BAszog = ABszog - 180

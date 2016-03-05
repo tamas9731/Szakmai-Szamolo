@@ -62,8 +62,15 @@ singam = math.sin(math.radians(Gammaszog))
 tAP = (sinbet / singam) * tAB
 tBP = (sinalf / singam) * tAB
 
-APszog = ABszog + Alfaszog
-BPszog = BAszog - Betaszog
+if (ABszog < 180):
+    APszog = ABszog - Alfaszog
+else:
+    APszog = ABszog + Alfaszog
+
+if (BAszog < 180):
+    BPszog = BAszog - Betaszog
+else:
+    BPszog = BAszog + Betaszog
 
 sinaps = math.sin(math.radians(APszog))
 cosaps = math.cos(math.radians(APszog))
