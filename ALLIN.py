@@ -66,6 +66,8 @@ def Iranyszog():
     menu()
 
 def BelsoszogesElometszes():
+    os.system("cls")
+    
     Allaspont_YA = float(input("A pont Y koordinata : "))
     Allaspont_XA = float(input("A pont X koordinata : "))
 
@@ -151,8 +153,8 @@ def BelsoszogesElometszes():
 
         os.system("cls")
         
-        print(y)
-        print(x)
+        print("Y koordinata : ",y)
+        print("X koordinata : ",x)
 
         input("\nEnter vissza a menube")
         menu()
@@ -165,8 +167,10 @@ def BelsoszogesElometszes():
         print("Egy perc vagy masodperc nagyobb mint 60")
         input("\nEnter vissza a menube")
         menu()
-def TajekozoElometszes():
-    print("Csak ketto tajekozo irany hasznalhato egy ponton\n")
+def TajekozottElometszes():
+    os.system("cls")
+    
+    print("CSAK KETTO TAJEKOZOIRANY HASZNALHATO EGY PONTON\n")
 
     Ay = ky = float(input("A pont Y koordinata : "))
     Ax = kx = float(input("A pont X koordinata : "))
@@ -434,10 +438,17 @@ def TajekozoElometszes():
     y = (Ayv+Byv)/2
     x = (Axv+Bxv)/2
 
-    print("Y : ",y)
-    print("X : ",x)
+    os.system("cls")
+    
+    print("Y koordinata : ",y)
+    print("X koordinata : ",x)
+
+    input("\nEnter vissza a menube")
+    menu()
 
 def Ivmetszes():
+    os.system("cls")
+    
     Ay = float(input("A pont Y koordinata : "))
     Ax = float(input("A pont X koordinata : "))
 
@@ -506,8 +517,13 @@ def Ivmetszes():
     y = (Ayv+Byv)/2
     x = (Axv+Bxv)/2
 
-    print(y)
-    print(x)
+    os.system("cls")
+    
+    print("Y koordinata : ",y)
+    print("X koordinata : ",x)
+
+    input("\nEnter vissza a menube")
+    menu()
 
 def menu():
     os.system("cls")
@@ -519,7 +535,7 @@ def menu():
     print("4, Ivmetszes.")
     print("5, Tajekozoiranyos Elometszes")
     print(Figyelem)
-    print("A tavolsagok meterbe jelennek meg")
+    print("A tavolsagok meterbe jelennek meg\n")
     valaszt = int(input("Valassz : "))
     
     if valaszt == 1:

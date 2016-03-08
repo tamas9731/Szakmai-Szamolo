@@ -1,6 +1,6 @@
 import math
 import os, sys
-print("Csak ketto tajekozo irany hasznalhato egy ponton\n")
+print("CSAK KETTO TAJEKOZOIRANY HASZNALHATO EGY PONTON\n")
 
 Ay = ky = float(input("A pont Y koordinata : "))
 Ax = kx = float(input("A pont X koordinata : "))
@@ -22,42 +22,42 @@ Tx4 = float(input("B pont 2, Tajekozas X koordinata : "))
 
 LAPszogd = int(input("\nAP leolvasas Fok : "))
 LAPszogm = int(input("AP leolvasas Perc : "))
-LAPszogs = int(input("AP leolvasas Masodperc"))
+LAPszogs = int(input("AP leolvasas Masodperc : "))
 
 Lapszog = math.degrees(LAPszogd + (LAPszogm/60) + (LAPszogs/3600))
 LAPszog = Lapszog/360*2*math.pi
 
 LBPszogd = int(input("\nBP leolvasas Fok : "))
 LBPszogm = int(input("BP leolvasas Perc : "))
-LBPszogs = int(input("BP leolvasas Masodperc"))
+LBPszogs = int(input("BP leolvasas Masodperc : "))
 
 Lbpszog = math.degrees(LBPszogd + (LBPszogm/60) + (LBPszogs/3600))
 LBPszog = Lbpszog/360*2*math.pi
 
 LAT1szogd = int(input("\nAT1 leolvasas Fok : "))
 LAT1szogm = int(input("AT1 leolvasas Perc : "))
-LAT1szogs = int(input("AT1 leolvasas Masodperc"))
+LAT1szogs = int(input("AT1 leolvasas Masodperc : "))
 
 Lat1szog = math.degrees(LAT1szogd + (LAT1szogm/60) + (LAT1szogs/3600))
 LAT1szog = Lat1szog/360*2*math.pi
 
 LAT2szogd = int(input("\nAT2 leolvasas Fok : "))
 LAT2szogm = int(input("AT2 leolvasas Perc : "))
-LAT2szogs = int(input("AT2 leolvasas Masodperc"))
+LAT2szogs = int(input("AT2 leolvasas Masodperc : "))
 
 Lat2szog = math.degrees(LAT2szogd + (LAT2szogm/60) + (LAT2szogs/3600))
 LAT2szog = Lat2szog/360*2*math.pi
 
 LBT1szogd = int(input("\nBT1 leolvasas Fok : "))
 LBT1szogm = int(input("BT1 leolvasas Perc : "))
-LBT1szogs = int(input("BT1 leolvasas Masodperc"))
+LBT1szogs = int(input("BT1 leolvasas Masodperc : "))
 
 Lbt1szog = math.degrees(LBT1szogd + (LBT1szogm/60) + (LBT1szogs/3600))
 LBT1szog = Lbt1szog/360*2*math.pi
 
 LBT2szogd = int(input("\nBT2 leolvasas Fok : "))
 LBT2szogm = int(input("BT2 leolvasas Perc : "))
-LBT2szogs = int(input("BT2 leolvasas Masodperc"))
+LBT2szogs = int(input("BT2 leolvasas Masodperc : "))
 
 Lbt2szog = math.degrees(LBT2szogd + (LBT2szogm/60) + (LBT2szogs/3600))
 LBT2szog = Lbt2szog/360*2*math.pi
